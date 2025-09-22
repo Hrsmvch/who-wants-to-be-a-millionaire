@@ -1,0 +1,48 @@
+@use "@/styles" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center; 
+  margin: 5px 0;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: $font-size-xxs;
+  font-weight: 600;
+  line-height: 116%;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  cursor: pointer;
+
+  @include respond-min($breakpoint-tablet) {
+    width: fit-content;
+    min-width: 296px;
+    padding: 20px 24px;
+    font-size: $font-size-sm;
+  }
+
+  @include respond-min($breakpoint-laptop) {
+    min-width: 352px;
+    padding: 24px 32px;
+    font-size: $font-size-md;
+  }
+}
+
+/* Variants */
+.button-default {
+  background: $color-primary;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+  &:active {
+    background-color: $color-primary-dark;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 6px $color-primary-light;
+  }
+}

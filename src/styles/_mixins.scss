@@ -1,0 +1,38 @@
+@use "typography" as *;
+@use "breakpoints" as *;
+
+@mixin hex-shape($sharp: false) {
+  @if $sharp {
+    clip-path: polygon(
+      20px 0,
+      calc(100% - 20px) 0,
+      100% 50%,
+      calc(100% - 20px) 100%,
+      20px 100%,
+      0 50%
+    );
+  } @else {
+    clip-path: polygon(
+      10px 0,
+      calc(100% - 10px) 0,
+      100% 50%,
+      calc(100% - 10px) 100%,
+      10px 100%,
+      0 50%
+    );
+  }
+}
+
+@mixin heading-size {
+  font-weight: 600;
+  font-size: $font-size-md;
+  line-height: 116%;
+
+  @include respond-min($breakpoint-tablet) {
+    font-size: $font-size-lg;
+  }
+
+  @include respond-min($breakpoint-laptop) {
+    font-size: $font-size-xxl;
+  }
+}

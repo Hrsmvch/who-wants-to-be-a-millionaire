@@ -1,0 +1,137 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": "What is the capital of France?",
+      "options": [
+        { "id": "q1-o1", "text": "Paris", "isCorrect": true },
+        { "id": "q1-o2", "text": "Rome", "isCorrect": false },
+        { "id": "q1-o3", "text": "Madrid", "isCorrect": false },
+        { "id": "q1-o4", "text": "Berlin", "isCorrect": false }
+      ],
+      "prizeAmount": 500
+    },
+    {
+      "id": "q2",
+      "question": "How many legs does a spider have?",
+      "options": [
+        { "id": "q2-o1", "text": "8", "isCorrect": true },
+        { "id": "q2-o2", "text": "6", "isCorrect": false },
+        { "id": "q2-o3", "text": "10", "isCorrect": false },
+        { "id": "q2-o4", "text": "Too many to count!", "isCorrect": true }
+      ],
+      "prizeAmount": 1000
+    },
+    {
+      "id": "q3",
+      "question": "What is the largest ocean on Earth?",
+      "options": [
+        { "id": "q3-o1", "text": "Atlantic Ocean", "isCorrect": false },
+        { "id": "q3-o2", "text": "Indian Ocean", "isCorrect": false },
+        { "id": "q3-o3", "text": "Pacific Ocean", "isCorrect": true },
+        { "id": "q3-o4", "text": "Arctic Ocean", "isCorrect": false }
+      ],
+      "prizeAmount": 2000
+    },
+    {
+      "id": "q4",
+      "question": "Which planet is closest to the Sun?",
+      "options": [
+        { "id": "q4-o1", "text": "Venus", "isCorrect": false },
+        { "id": "q4-o2", "text": "Mercury", "isCorrect": true },
+        { "id": "q4-o3", "text": "Mars", "isCorrect": false },
+        { "id": "q4-o4", "text": "The hot one", "isCorrect": false }
+      ],
+      "prizeAmount": 4000
+    },
+    {
+      "id": "q5",
+      "question": "Who painted the Mona Lisa?",
+      "options": [
+        { "id": "q5-o1", "text": "Leonardo da Vinci", "isCorrect": true },
+        { "id": "q5-o2", "text": "Vincent van Gogh", "isCorrect": false },
+        { "id": "q5-o3", "text": "Pablo Picasso", "isCorrect": false },
+        { "id": "q5-o4", "text": "Claude Monet", "isCorrect": false }
+      ],
+      "prizeAmount": 8000
+    },
+    {
+      "id": "q6",
+      "question": "In which year did the Berlin Wall fall?",
+      "options": [
+        { "id": "q6-o1", "text": "1987", "isCorrect": false },
+        { "id": "q6-o2", "text": "1989", "isCorrect": true },
+        { "id": "q6-o3", "text": "1991", "isCorrect": false },
+        { "id": "q6-o4", "text": "When Pink Floyd played", "isCorrect": false }
+      ],
+      "prizeAmount": 16000
+    },
+    {
+      "id": "q7",
+      "question": "What's the largest mammal in the world?",
+      "options": [
+        { "id": "q7-o1", "text": "African Elephant", "isCorrect": false },
+        { "id": "q7-o2", "text": "Blue Whale", "isCorrect": true },
+        { "id": "q7-o3", "text": "Fin Whale", "isCorrect": false },
+        { "id": "q7-o4", "text": "Giraffe", "isCorrect": false }
+      ],
+      "prizeAmount": 32000
+    },
+    {
+      "id": "q8",
+      "question": "What is the currency of Japan?",
+      "options": [
+        { "id": "q8-o1", "text": "Yen", "isCorrect": true },
+        { "id": "q8-o2", "text": "Won", "isCorrect": false },
+        { "id": "q8-o3", "text": "Dollar", "isCorrect": false },
+        { "id": "q8-o4", "text": "Pound", "isCorrect": false }
+      ],
+      "prizeAmount": 64000
+    },
+    {
+      "id": "q9",
+      "question": "Which element has the chemical symbol 'Au'?",
+      "options": [
+        { "id": "q9-o1", "text": "Silver", "isCorrect": false },
+        { "id": "q9-o2", "text": "Aluminum", "isCorrect": false },
+        { "id": "q9-o3", "text": "Gold", "isCorrect": true },
+        { "id": "q9-o4", "text": "None", "isCorrect": false }
+      ],
+      "prizeAmount": 125000
+    },
+    {
+      "id": "q10",
+      "question": "Which scientist developed the theory of relativity?",
+      "options": [
+        { "id": "q10-o1", "text": "Isaac Newton", "isCorrect": false },
+        { "id": "q10-o2", "text": "Niels Bohr", "isCorrect": false },
+        { "id": "q10-o3", "text": "Max Planck", "isCorrect": false },
+        { "id": "q10-o4", "text": "Albert Einstein", "isCorrect": true }
+      ],
+      "prizeAmount": 250000
+    },
+    {
+      "id": "q11",
+      "question": "What is the hardest natural substance on Earth?",
+      "options": [
+        { "id": "q11-o1", "text": "Diamond", "isCorrect": true },
+        { "id": "q11-o2", "text": "Iron", "isCorrect": false },
+        { "id": "q11-o3", "text": "Gold", "isCorrect": false },
+        { "id": "q11-o4", "text": "Quartz", "isCorrect": false }
+      ],
+      "prizeAmount": 500000
+    },
+    {
+      "id": "q12",
+      "question": "Which element has the chemical symbol 'O'?",
+      "options": [
+        { "id": "q12-o1", "text": "Oxygen", "isCorrect": true },
+        { "id": "q12-o2", "text": "Osmium", "isCorrect": false },
+        { "id": "q12-o3", "text": "Oganesson", "isCorrect": false },
+        { "id": "q12-o4", "text": "Iron", "isCorrect": false }
+      ],
+      "prizeAmount": 1000000
+    }
+  
+  ]
+}

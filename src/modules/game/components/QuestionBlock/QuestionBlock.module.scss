@@ -1,0 +1,189 @@
+@use "@/styles" as *;
+
+.questionBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 1rem;
+  background: $color-gray-light;
+
+  @include respond-min($breakpoint-tablet) {
+    padding: 6rem 2rem;
+  }
+
+  &__title {
+    margin: auto;
+    font-size: $font-size-xs;
+    font-weight: 600;
+    line-height: 116%;
+    text-align: center;
+    text-wrap: balance;
+
+    @include respond-min($breakpoint-tablet) {
+      margin: 0;
+      font-size: $font-size-md;
+      text-align: left;
+    }
+    @include respond-min($breakpoint-desktop) {
+      font-size: $font-size-lg;
+    }
+    @include respond-min($breakpoint-4k) {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &__optionsList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+    @include respond-min($breakpoint-laptop) {
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__optionItem {
+    counter-increment: letters;
+    position: relative;
+    font-size: $font-size-sm;
+    font-weight: 400;
+    line-height: 116%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 16px;
+      height: 1px;
+      background: $color-gray;
+      transform: translateY(-50%);
+      transition: background 0.3s ease;
+    }
+
+    &:before {
+      left: -16px;
+    }
+
+    &:after {
+      right: -16px;
+    }
+  }
+
+  &__optionButton {
+    position: relative;
+    display: block;
+    @include hex-shape($sharp: true);
+    width: 100%;
+    padding: 1px;
+    background: $color-gray;
+    color: $color-gray;
+    border: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+
+    &:before {
+      content: counter(letters, upper-alpha);
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      z-index: 2;
+      color: $color-primary;
+      font-weight: 600;
+      font-size: $font-size-xxs;
+      transform: translateY(-50%);
+
+      @include respond-min($breakpoint-laptop) {
+        font-size: $font-size-sm;
+      }
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      @include hex-shape($sharp: true);
+      width: 100%;
+      height: 100%;
+      padding: 20px 24px 20px 46px;
+      background: $color-white;
+      font-size: $font-size-xxs;
+      color: $color-gray-dark;
+      transition: background 0.3s ease;
+
+      @include respond-min($breakpoint-laptop) {
+        font-size: $font-size-sm;
+        padding: 24px 24px 24px 46px;
+      }
+
+      @include respond-min($breakpoint-4k) {
+        font-size: $font-size-md;
+      } 
+    }
+
+    &:focus-visible {
+      background-color: $color-primary;
+      outline: none;
+    }
+  }
+}
+
+/* Effects */
+.questionBlock__optionItem:hover {
+  &::after,
+  &::before {
+    background: $color-primary;
+  }
+  .questionBlock__optionButton {
+    background-color: $color-primary;
+  }
+}
+
+.questionBlock__optionItem:has(:active) {
+  &::after,
+  &::before {
+    background: $color-primary;
+  }
+  .questionBlock__optionButton {
+    background-color: $color-primary;
+
+    span {
+      background: $color-primary-lighter;
+    }
+  }
+}
+
+/* States */
+.questionBlock__optionItem.correct {
+  &::after,
+  &::before {
+    background: $color-success;
+  }
+  .questionBlock__optionButton {
+    background-color: $color-success;
+
+    span {
+      background: $color-success-light;
+    }
+  }
+}
+
+.questionBlock__optionItem.error {
+  &::after,
+  &::before {
+    background: $color-error;
+  }
+  .questionBlock__optionButton {
+    background-color: $color-error;
+
+    span {
+      background: $color-error-light;
+    }
+  }
+}
+
