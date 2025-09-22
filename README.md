@@ -114,7 +114,8 @@ The game follows the classic "Who Wants to be a Millionaire" format:
 npm run dev          
 npm run build        
 npm run start        
-npm run lint         
+npm run lint    
+npm run husky     
 ```
 
 ### Adding New Questions
