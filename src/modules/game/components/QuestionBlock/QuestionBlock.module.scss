@@ -136,14 +136,17 @@
 }
 
 /* Effects */
-.questionBlock__optionItem:hover:not(:focus) {
-  &::after,
-  &::before {
-    background: $color-primary;
+.questionBlock__optionItem:hover {
+  @include respond-min($breakpoint-tablet) {
+    &::after,
+    &::before {
+      background: $color-primary;
+    }
+    .questionBlock__optionButton {
+      background-color: $color-primary;
+    }
   }
-  .questionBlock__optionButton {
-    background-color: $color-primary;
-  }
+
 }
 
 .questionBlock__optionItem:has(:active) {

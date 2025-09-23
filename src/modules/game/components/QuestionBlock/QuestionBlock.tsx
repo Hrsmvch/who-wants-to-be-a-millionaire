@@ -43,7 +43,7 @@ export default function QuestionBlock({
             .join(' ');
 
           return (
-            <div key={optionId} className={itemClasses}>
+            <div key={optionId + id} className={itemClasses}>
               <button
                 type="button"
                 role="radio"
