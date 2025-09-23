@@ -2,7 +2,7 @@
 
 A modern, interactive web-based recreation of the classic "Who Wants to be a Millionaire" quiz game built with Next.js, TypeScript, and SCSS.
 
-[Game Demo](.)
+[Game Demo](https://who-wants-to-be-a-millionaire-dun.vercel.app/)
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ A modern, interactive web-based recreation of the classic "Who Wants to be a Mil
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Hrsmvch/who-wants-to-be-a-millionaire.git
 cd who-wants-to-be-a-millionaire
 
 npm install
