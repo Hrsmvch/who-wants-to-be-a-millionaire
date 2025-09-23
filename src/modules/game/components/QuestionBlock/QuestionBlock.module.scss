@@ -136,7 +136,7 @@
 }
 
 /* Effects */
-.questionBlock__optionItem:hover {
+.questionBlock__optionItem:hover:not(:focus) {
   &::after,
   &::before {
     background: $color-primary;
