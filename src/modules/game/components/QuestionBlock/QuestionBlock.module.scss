@@ -19,6 +19,7 @@
     line-height: 116%;
     text-align: center;
     text-wrap: balance;
+    padding: 1rem 0;
 
     @include respond-min($breakpoint-tablet) {
       margin: 0;
@@ -37,6 +38,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 8px;
+    padding: 1rem 0;
 
     @include respond-min($breakpoint-laptop) {
       grid-template-columns: 1fr 1fr;

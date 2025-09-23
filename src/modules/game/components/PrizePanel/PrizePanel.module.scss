@@ -158,6 +158,7 @@
 
     &::after {
       content: "☰";
+      color: $color-gray-dark;
     }
 
     &.isOpen {

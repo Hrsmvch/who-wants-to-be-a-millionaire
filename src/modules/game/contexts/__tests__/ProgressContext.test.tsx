@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { renderHook, act } from '@testing-library/react';
 import { ProgressProvider, useProgress } from '../ProgressContext.tsx';
 import { Step } from '../../types.ts';
