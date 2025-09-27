@@ -8,6 +8,7 @@ A modern, interactive web-based recreation of the classic "Who Wants to be a Mil
 
 - [Quick Start](#-quick-start)
 - [Project Structure](#-project-structure)
+- [Technical implementation](#-technical-implementation)
 - [Game Flow](#-game-flow)
 - [Development](#-development)
 - [Deployment](#-deployment)
@@ -41,6 +42,17 @@ Open [http://localhost:3000](http://localhost:3000) to play the game!
 npm run build
 npm start
 ```
+
+## Technical implementation
+
+- Adaptive layout: works from **iPhone 8** to **4K displays**
+- Game config in JSON is **extensible** (variable number of answers, multiple correct answers, etc.)
+- Entire codebase is strictly typed with **TypeScript**
+- Code style follows **Airbnb ESLint rules**
+- Pre-commit: runs `eslint` on staged files
+- Pre-push: runs unit tests
+- Deployment: [Vercel](https://vercel.com/)
+
 
 ## Project Structure
 
@@ -114,7 +126,8 @@ The game follows the classic "Who Wants to be a Millionaire" format:
 npm run dev          
 npm run build        
 npm run start        
-npm run lint    
+npm run lint
+npm run test    
 npm run husky     
 ```
 
